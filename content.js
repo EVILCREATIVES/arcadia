@@ -1,7 +1,7 @@
 const ARC_ROOT_CLASS = "arcadia-root-flag";
 const ARC_INLINE_CLASS = "arcadia-inline-flag";
 const ARC_LINK_CLASS = "arcadia-link-flag";
-const ARC_ANALYZED_ATTR = "data-arcadia-analysed";
+const ARC_ANALYZED_ATTR = "data-arcadia-analyzed";
 const CANDIDATE_SELECTOR = "article, main, p, blockquote, li, h1, h2, h3";
 
 function cleanText(value) {

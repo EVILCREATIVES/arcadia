@@ -148,7 +148,7 @@ function heuristicAnalysis(payload) {
     highlights: dominantMarkers,
     url: payload.url,
     title: payload.title,
-    analysedAt: new Date().toISOString()
+    analyzedAt: new Date().toISOString()
   });
 }
 
@@ -191,7 +191,7 @@ function normalizeAnalysis(raw) {
     model: raw?.model || DEFAULT_MODEL,
     url: raw?.url || "",
     title: raw?.title || "",
-    analysedAt: raw?.analysedAt || new Date().toISOString()
+    analyzedAt: raw?.analyzedAt || new Date().toISOString()
   };
 }
 
@@ -251,7 +251,7 @@ async function analyzeWithGemini(payload, apiKey, model) {
     model,
     url: payload.url,
     title: payload.title,
-    analysedAt: new Date().toISOString()
+    analyzedAt: new Date().toISOString()
   });
 }
 
