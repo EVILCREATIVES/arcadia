@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcadia</title>
+    <style>
+      body {
+        margin: 0;
+        width: 340px;
+        background: #f1f1f1;
+        color: #000;
+        font-family: Arial, sans-serif;
+      }
+
+      .shell {
+        padding: 16px;
+        border: 4px solid #000;
+        background: #f8ed00;
+        box-shadow: 10px 10px 0 #ff3b30;
+        margin: 12px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-family: "Arial Black", Impact, sans-serif;
+        font-size: 28px;
+        text-transform: uppercase;
+      }
+
+      p,
+      li {
+        margin: 0 0 10px;
+        line-height: 1.4;
+      }
+
+      .score {
+        margin: 14px 0 10px;
+        font-family: "Arial Black", Impact, sans-serif;
+        font-size: 42px;
+      }
+
+      button {
+        width: 100%;
+        margin-top: 8px;
+        padding: 10px;
+        border: 3px solid #000;
+        background: #000;
+        color: #fff;
+        font-family: "Arial Black", Impact, sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      button.secondary {
+        background: #fff;
+        color: #000;
+      }
+
+      .meta {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+
+      ul {
+        padding-left: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <h1>Arcadia</h1>
+      <p>AI is the virus. Arcadia uses the same machinery as antidote.</p>
+      <div id="result">
+        <div class="score" id="score">--%</div>
+        <p id="verdict">No analysis yet.</p>
+        <p id="explanation">Scan the current page to estimate synthetic contamination.</p>
+        <p id="badUse"></p>
+        <ul id="highlights"></ul>
+        <div class="meta" id="meta"></div>
+      </div>
+      <button id="scan">Scan this page</button>
+      <button class="secondary" id="settings">Configure Gemini</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
