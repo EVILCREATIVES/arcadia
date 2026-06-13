@@ -26,8 +26,7 @@ links in-place, and explains why the detected usage weakens trust, voice, and ac
 
 1. Open Chromium-based extensions.
 2. Enable developer mode.
-3. Load unpacked from this repository root:
-   `/home/runner/work/arcadia/arcadia/EVILCREATIVES/arcadia`
+3. Load unpacked from this repository root directory.
 4. Open the Arcadia options page and add a Gemini API key if you want live model analysis.
 
 Without a Gemini API key, Arcadia still runs a local heuristic detector.
